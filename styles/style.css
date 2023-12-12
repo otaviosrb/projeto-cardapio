@@ -1,0 +1,276 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+header { 
+    margin: auto;
+    padding-bottom: 10px;
+    background-color: black;
+    padding: 10px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+
+    /* Imagem Logo */
+    background-image: url(../logo.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#moreInfo {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    border: 1px dashed white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+}
+
+#moreInfo:hover {
+    color: gray;
+    border: 1px solid gray;
+}
+
+#nome, #descrição {
+    margin: 10px;
+}
+
+#nome {
+    color: white;
+    font-size: 20px;
+}
+
+#descrição {
+    color: lightgray;
+    font-size: 15px;
+}
+
+.contato { 
+    background-color: rgb(58, 58, 58);
+    height: 35px;
+}
+
+#open, #closed{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0px 10px;
+    margin: 0px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#open {
+    background-color: rgb(26, 177, 6);
+    height: 35px;
+}
+
+#closed {
+    background-color: red;
+}
+
+#telefone {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    float: right;
+    color: white;
+}
+
+#telefone span {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.info {
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    color: white;
+}
+
+table td {
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dado {
+    font-size: 12px;
+}
+
+/* ------ */
+
+.menu-container {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+li {
+    scroll-snap-align: center;
+    margin: 5px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+
+.nome-section {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nome-section h1 {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.nome-section button {
+    justify-content: flex-end;
+    margin-right: 5px;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+.nome-section button:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.produto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 15px; 
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fotoProd {
+    width: 70px;
+    height: 70px;
+
+    background-image: url(../produto.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.text-container h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.text-container p {
+    font-size: 15px;
+    color: rgb(83, 83, 83);
+    margin-bottom: 10px;
+}
+
+.text-container h2 {
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+}
+
+.sessao {
+    transition: height s ease-in-out;
+}
+
+.sessao.minimized {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #fff;
+    margin-top: 0px;
+}
+
+
+
+
+
+
